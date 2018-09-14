@@ -156,6 +156,19 @@ public class MainLeitorExcel extends Application {
 			        				case "OUTORGA PRÉVIA": 
 			        					engOutorga.load(getClass().getResource("/outorgaPreviaSubterranea.html").toExternalForm());
 		        						break;
+		        						
+			        				case "TRANSFERÊNCIA": 
+			        					engOutorga.load(getClass().getResource("/outorgaTransferenciaSuterranea.html").toExternalForm());
+		        						break;
+		        						
+			        				case "INDEFERIMENTO PRÉVIA": 
+			        					engOutorga.load(getClass().getResource("/previaInderefimentoSubterranea.html").toExternalForm());
+		        						break;
+		        						
+			        				case "INDEFERIMENTO OUTORGA": 
+			        					engOutorga.load(getClass().getResource("/outorgaIndeferimentoSubterranea.html").toExternalForm());
+		        						break;
+
 			        			
 			        			}
 			        			
@@ -311,6 +324,7 @@ var x = document.getElementsByTagName('iframe')
 var y = x[1].contentDocument;
 y.body.getElementsByTagName('aaa')["0"].textContent = "vida louca"
 
+y.body.getElementsByTagName('aaa')["0"].innerHTML = "<table border='1'><tbody><tr><td>eita nóis</td></tr</tbody></table>";
 
  */
 

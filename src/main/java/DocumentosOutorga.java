@@ -23,12 +23,7 @@ public class DocumentosOutorga {
 
 	public String criarDocumento (Outorga outorga) {
 			
-			
-			//htmlRel = (String) engVistoria.executeScript("document.documentElement.outerHTML");
-			
 			Document docHtml = null;
-			
-			//System.out.println("metodo criar outorga chamado, veja string html" + htmlRel);
 			
 			docHtml = Jsoup.parse(htmlRel, "UTF-8").clone();
 			
